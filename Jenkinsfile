@@ -13,6 +13,7 @@ pipeline{
     stage("Clone repo"){
       steps{
         sh "git clone https://github.com/MohamedAmineDev/devops-tp4.git "
+        sh "git checkout dev "
       }
     }
     stage("Generate backend image"){
