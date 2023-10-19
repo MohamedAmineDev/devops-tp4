@@ -4,7 +4,7 @@ services:
   spring-boot-app:
     image: web-backend
     ports:
-      - 0.0.0.0:8092:8091
+      - 0.0.0.0:8092:8081
     restart: on-failure
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql/demo
@@ -17,7 +17,7 @@ services:
   front-angular-app:
     image: web-front
     ports:
-      - 0.0.0.0:3000:4200
+      - 0.0.0.0:4200:4200
     depends_on:
       - spring-boot-app
     
