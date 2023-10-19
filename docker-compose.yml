@@ -17,7 +17,7 @@ services:
   front-angular-app:
     image: web-front
     ports:
-      - 0.0.0.0:4200:4200
+      - 0.0.0.0:4200:80
     depends_on:
       - spring-boot-app
     
