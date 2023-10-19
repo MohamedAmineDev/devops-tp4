@@ -17,7 +17,7 @@ services:
   front-angular-app:
     image: web-front
     ports:
-      - 0.0.0.0:3000:8080
+      - 0.0.0.0:3000:4200
     
   # MySQL Database
   mysql:
