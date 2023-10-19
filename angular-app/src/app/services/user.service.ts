@@ -8,7 +8,7 @@ import { User } from '../models/User';
 })
 export class UserService {
 
-  baseURL:string="http://localhost:8081/user"
+  baseURL:string="http://spring-boot-app/user";
   constructor(private  httpClient:HttpClient) { }
 
   getAllUsers():Observable<any>{
