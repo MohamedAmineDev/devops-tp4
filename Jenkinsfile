@@ -26,7 +26,6 @@ pipeline{
     stage("Generate frontend image"){
       steps{
         dir("devops-tp4/angular-app"){
-          sh "npm install"
           sh "docker build -t web-front ."
         }
       }
