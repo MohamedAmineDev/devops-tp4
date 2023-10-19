@@ -2,6 +2,7 @@ pipeline{
   agent any
   tools{
     maven 'maven'
+    nodejs 'Nodejs'
   }
   stages{
     stage("Clean un"){
